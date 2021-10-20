@@ -57,7 +57,7 @@ body {
 .footer { grid-area: footer; }
 
 /* Change background color of all grid items */
-.grid > .header, .navbar, .main, .footer {
+.header, .navbar, .main, .footer {
   background-color: #3366FF;
 }
 
@@ -77,7 +77,7 @@ body {
   overflow: hidden;
 }
 
-.navbar .item {
+.item {
   padding: 10px;
   text-decoration: none;
   font-size: 1.5em;
@@ -89,7 +89,7 @@ body {
   cursor: pointer;
 }
 
-.navbar .icon {
+.icon {
   display: none;
 }
 
@@ -107,14 +107,14 @@ body {
     display: none;
   }
 
-  .navbar .icon {
+  .icon {
     display: block;
     font-size: 2.5em;
     font-weight: bold;
     color: #fff;
   }
 
-  .navbar.responsive {
+  .responsive {
     position: relative;
   }
 
@@ -133,7 +133,7 @@ body {
   margin-bottom: 10px;
 }
 
-.our-projects .our-projects-title {
+.our-projects-title {
   color: #fff;
   margin: 50px 0 50px 0;
 }
@@ -159,10 +159,10 @@ body {
 }
 
 .project-card {
-  width: 250px;
+  width: 200px;
   background-color: #fff;
   padding: 10px 5px 10px 5px;
-  border-radius: 50%;
+  border-radius: 30%;
 }
 
 @media screen and (max-width: 992px) {
@@ -203,19 +203,101 @@ body {
   }
 }
 
-
 @media screen and (max-width: 992px) {
   .services {
     grid-gap: 50px;
   }
 }
 
-
 .service-card {
   width: 200px;
   background-color: #fff;
   padding: 10px 0 20px 0;
   border-radius: 10px;
+}
+
+.service-content {
+  padding: 10px;
+  border-top: 10px solid #3366FF;
+}
+
+.services-features-title {
+  color: #fff;
+}
+
+.services-features-cards {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 40px;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .services-features-cards {
+    grid-template-columns: auto;
+  }
+}
+
+.services-features-card {
+  width: 150px;
+  padding: 10px 5px 10px 5px;
+}
+
+.services-features-photo {
+  border: 5px solid #fff;
+  padding: 10px;
+  border-radius: 30%;
+}
+
+.services-features-card p {
+  color: #fff;
+  font-size: 1.2em;
+  border-bottom: 5px solid #fff;
+  padding-bottom: 5px;
+}
+
+.clients-reviews-title {
+  color: #fff;
+}
+
+.clients-reviews-cards {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto;
+  grid-gap: 40px;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .services-features-cards {
+    grid-template-columns: auto;
+  }
+}
+
+.clients-reviews-card {
+  width: 150px;
+}
+
+.clients-reviews-card q {
+  color: #fff;
+}
+
+.clients-reviews-card img {
+  border: 5px inset #3366FF;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.clients-reviews-card p {
+  color: #fff;
+  font-weight: bold;
+  border: 2px solid #fff;
+  padding: 10px;
+}
+
+.clients-reviews-card p:hover {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .footer {
