@@ -1,6 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 
-/* Website framework */
+/* Start Website Framework */
 .container {
   width: 100%;
   padding-right: 15px;
@@ -21,6 +21,10 @@
   font-size: 2.5em;
 }
 
+.title-3 {
+  font-size: 2em;
+}
+
 .txt-center {
   text-align: center;
 }
@@ -29,6 +33,7 @@
   clear: both;
 }
 
+/* End Website Framework */
 
 * {
   box-sizing: border-box;
@@ -225,6 +230,12 @@ body {
   color: #fff;
 }
 
+@media screen and (max-width: 400px) {
+.services-features-title {
+  font-size: 1.5em;
+}
+}
+
 .services-features-cards {
   display: grid;
   justify-content: center;
@@ -270,7 +281,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .services-features-cards {
+  .clients-reviews-cards {
     grid-template-columns: auto;
   }
 }
@@ -300,7 +311,29 @@ body {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+.contact-us {
+  height: auto;
+}
+
+.contact-us-title {
+  color: #fff;
+}
+
+.contact-us-address p {
+  color: #fff;
+}
+
+.para:first-child {
+  padding-bottom: 10px;
+}
+
+.contact-us-address a:link, a:hover, a:active, a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
 .footer {
+  padding-top: 50px;
   height: auto;
 }
 
@@ -337,6 +370,12 @@ body {
     margin-right: 15px;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .social a {
+    margin-right: 10px;
+  }
+  }
 
 .social i {
   font-size: 20px;
